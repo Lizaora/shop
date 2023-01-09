@@ -38,7 +38,7 @@ const Header = () => {
                         <a href="/">Accueil</a>
                       </li>
                       <li className="mega-menu-position top-hover">
-                        <a href="shop.html">magasin</a>
+                        <a href="/shop">magasin</a>
                    
                       </li>
                       <li>
