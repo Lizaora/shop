@@ -1,4 +1,5 @@
 import ApercusPanier from "./panier/ApercusPanier";
+import { Link } from "react-router-dom"
 const Header = () => {
   return (
     <header className="header-area clearfix">
@@ -20,13 +21,13 @@ const Header = () => {
           <div className="row">
             <div className="col-lg-3 col-md-4 col-6">
               <div className="logo">
-                <a href="/">
+              <Link to="/">
                   <img
                     width="110px"
                     alt=""
                     src={process.env.PUBLIC_URL + "assets/img/logo/logo.jpg"}
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-9 col-md-8 col-6">
@@ -35,10 +36,10 @@ const Header = () => {
                   <nav>
                     <ul>
                       <li className="top-hover">
-                        <a href="/">Accueil</a>
+                      <Link to="/">Accueil</Link>
                       </li>
                       <li className="mega-menu-position top-hover">
-                        <a href="/shop">magasin</a>
+                      <Link to="/shop">magasin</Link>  
                    
                       </li>
                       <li>

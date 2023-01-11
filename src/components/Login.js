@@ -17,7 +17,7 @@ const Login = () => {
 
       <LienRapide />
 
-      <ProductSlide />
+      <ProductSlide title="Nos offres du moment"/>
 
       <div
         className="testimonials-area bg-img pt-120 pb-115"

@@ -1,10 +1,10 @@
 import ContenuPanier from "./ContenuPanier"
-
+import { Link } from "react-router-dom"
 const ApercusPanier =()=>{
 
  return(
     <div className="header-cart">
-    <a href="/">
+     <Link to="/panier">
       <div className="cart-icon">
         <i className="ion-bag" />
         <span className="count-style">2</span>
@@ -13,7 +13,7 @@ const ApercusPanier =()=>{
         <span className="digit">panier</span>
         <span>0.00€</span>
       </div>
-    </a>
+      </Link>
     <div className="shopping-cart-content">
         <ContenuPanier lien="assets/img/cart/cart-1.jpg"
         name="bouquet"
