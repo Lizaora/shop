@@ -23,6 +23,7 @@ const Header = () => {
               <div className="logo">
               <Link to="/">
                   <img
+                  className="header-logo"
                     width="110px"
                     alt=""
                     src={process.env.PUBLIC_URL + "assets/img/logo/logo.jpg"}

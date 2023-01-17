@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState,useEffect}from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -6,9 +6,27 @@ import CardsProduct from "../CardsProduct";
 import { Link } from "react-router-dom";
 
 const ProductSlide = ({title}) => {
+
+  const [width, setWidth] = useState(window.innerWidth);
+
+function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+}
+useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+        window.removeEventListener('resize', handleWindowSizeChange);
+    }
+}, []);
+
+const isMobile = width <= 767;
+
+
+
+
   return (
     <div className="product-area pt-40 pb-70">
-      <div className="container" style={{ paddingTop: "10em" }}>
+      <div className="container product" style={{ paddingTop: "10em" }}>
         <div className="product-top-bar section-border mb-35">
           <div className="section-title-wrap">
             <h3 className="section-title section-bg-white">
@@ -17,7 +35,7 @@ const ProductSlide = ({title}) => {
           </div>
         </div>
         <div className="tab-content">
-          <OwlCarousel items={4} loop margin={10}>
+          <OwlCarousel items={isMobile?2:4} loop margin={isMobile?10:15}>
             <div className="product-wrapper">
               <div className="product-img">
                 <Link to="/detaille">

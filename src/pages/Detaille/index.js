@@ -313,7 +313,7 @@ const Detaille = () => {
                 </div>
             </div>
         </div>
-      <ProductSlide title="Articles qui pourraient aussi vous intéresser." />
+      <ProductSlide  style={{padding : 0, margin :0}} title="Articles qui pourraient aussi vous intéresser." />
       <Footer />
     </div>
   );

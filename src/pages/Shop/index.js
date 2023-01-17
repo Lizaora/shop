@@ -39,6 +39,24 @@ const Shop = () => {
                         }}
                       />
                     </div>
+                    <div className="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                      <CardsProduct
+                        article={{
+                          pourcentage: "30",
+                          name: "bouqet",
+                          promo: "12",
+                        }}
+                      />
+                    </div>
+                     <div className="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                      <CardsProduct
+                        article={{
+                          pourcentage: "30",
+                          name: "bouqet",
+                          promo: "12",
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
