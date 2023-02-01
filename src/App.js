@@ -14,6 +14,7 @@ import Panier from "./pages/Panier";
 
 const ROLES = {
   User: 2001,
+  admin : "admin"
 };
 
 function App() {
