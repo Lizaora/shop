@@ -1,20 +1,20 @@
 import  React from 'react'
-
+import { Link } from 'react-router-dom'
 
 const CardsProduct = ({article})=>{
     return(
         <>
         <div className="product-wrapper">
         <div className="product-img">
-          <a href="product-details.html">
+        <Link to="/detaille">
             <img alt="" src="assets/img/product/product-1.png" />
-          </a>
+         </Link>
           {article.pourcentage?(<span>-{article.pourcentage}%</span>):null}
          
           <div className="product-action">
-            <a className="action-wishlist" href="/" title="Wishlist">
+            {/* <a className="action-wishlist" href="/" title="Wishlist">
               <i className="icon-heart" />
-            </a>
+            </a> */}
             <a className="action-cart" href="/" title="Add To Cart">
               <i className="icon-handbag" />
             </a>

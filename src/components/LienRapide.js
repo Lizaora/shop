@@ -1,4 +1,5 @@
 import React from'react';
+import { Link } from "react-router-dom"
 
 const LienRapide = ()=>{
     return(    <div className="banner-area">
@@ -29,12 +30,12 @@ const LienRapide = ()=>{
           </div>
           <div className="col-lg-4 col-md-4">
             <div className="single-banner mb-xs-banner img-zoom mb-30">
-              <a href="/">
+              <Link to="/shop">
                 <img src="assets/img/banner/banner-3.png" alt="" />
-              </a>
+                </Link>
               <div className="banner-content">
                 <h4>achat en ligne</h4>
-                <a href="/">Accéder à la Boutique</a>
+                <Link to="/shop">magasin Accéder à la Boutique</Link>
               </div>
             </div>
           </div>

@@ -1,24 +1,9 @@
-import { useNavigate, Link } from "react-router-dom";
-import { useContext } from "react";
-import AuthContext from "../context/AuthProvider";
-
 const Home = () => {
-    const { setAuth } = useContext(AuthContext);
-    const navigate = useNavigate();
+  return (
+    <section>
+      <h1>Chat</h1>
+    </section>
+  );
+};
 
-    const logout = async () => {
-        // if used in more components, this should be in context 
-        // axios to /logout endpoint 
-        setAuth({});
-        navigate('/linkpage');
-    }
-
-    return (
-        <section>
-            <h1>Chat</h1>
-         
-        </section>
-    )
-}
-
-export default Home
+export default Home;
